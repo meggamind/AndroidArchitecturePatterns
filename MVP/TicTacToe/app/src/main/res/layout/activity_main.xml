@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <GridLayout
+        android:id="@+id/buttonGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="303dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:columnCount="3"
+        android:rowCount="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            style="@style/tictactoebutton"
+            android:onClick="onCellClicked"
+            android:tag="00" />
+
+        <Button
+            style="@style/tictactoebutton"
+            android:onClick="onCellClicked"
+            android:tag="01" />
+
+        <Button
+            style="@style/tictactoebutton"
+            android:onClick="onCellClicked"
+            android:tag="02" />
+
+
+        <Button
+            style="@style/tictactoebutton"
+            android:onClick="onCellClicked"
+            android:tag="10" />
+
+        <Button
+            style="@style/tictactoebutton"
+            android:onClick="onCellClicked"
+            android:tag="11" />
+
+        <Button
+            style="@style/tictactoebutton"
+            android:onClick="onCellClicked"
+            android:tag="12" />
+
+        <Button
+            style="@style/tictactoebutton"
+            android:onClick="onCellClicked"
+            android:tag="20" />
+
+        <Button
+            style="@style/tictactoebutton"
+            android:onClick="onCellClicked"
+            android:tag="21" />
+
+        <Button
+            style="@style/tictactoebutton"
+            android:onClick="onCellClicked"
+            android:tag="22" />
+
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/winner_player_conatiner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGrid">
+
+        <TextView
+            android:id="@+id/winner_player_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/winner_player_label_layout_margin"
+            android:textSize="@dimen/winner_player_label_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/winner"
+            android:textSize="@dimen/winner_player_winner_text_size" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
