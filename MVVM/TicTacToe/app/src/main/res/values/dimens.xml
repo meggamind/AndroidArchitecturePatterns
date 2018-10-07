@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="winner_player_label_text_size">40sp</dimen>
+    <dimen name="winner_player_label_layout_margin">20sp</dimen>
+    <dimen name="winner_player_winner_text_size">30sp</dimen>
+</resources>
